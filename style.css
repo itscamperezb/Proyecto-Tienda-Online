@@ -91,13 +91,6 @@ body {
   border: none;
 }
 
-@media (max-width: 640px) {
-  .logo {
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
 .icono {
   place-self: center;
   width: 50%;
@@ -150,4 +143,11 @@ body {
   display: grid;
   grid-template-rows: auto 1fr 0.8fr;
   width: 300px;
+}
+
+@media (max-width: 640px) {
+  .logo {
+    display: block;
+    margin-bottom: 20px;
+  }
 }
