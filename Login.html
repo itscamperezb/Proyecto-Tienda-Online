@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login">
+      <div class="login-container">
+        <img src="logos/logo_yard_sale.svg" alt="logo_yard_sale" class="logo" />
+
+        <form action="/PasswordUpdate" class="form">
+          <!-- el atributo for="" le indica al label cual es el input con el que va a relacionarse, por lo tanto se debe colocar el id="" con el mismo valor colocadp en el for="" del label -->
+          <label for="password" class="label">Email address</label>
+          <input
+            type="password"
+            id="password"
+            class="input input-password"
+            placeholder="email@yardsale.com"
+          />
+          <label for="Password" class="label">Password</label>
+          <input
+            type="password"
+            id="Password"
+            class="input input-Password"
+            placeholder="*******"
+          />
+          <input
+            type="submit"
+            value="Login"
+            class="primary-button login-button"
+          />
+          <a href="/" class="forgotPassword"> Olvidé mi contraseña</a>
+        </form>
+        <input
+          type="submit"
+          value="SignUp"
+          class="secondary-button signUp-button"
+        />
+      </div>
+    </div>
+  </body>
+</html>
