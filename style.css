@@ -90,3 +90,20 @@ body {
     display: block;
   }
 }
+
+.icono {
+  place-self: center;
+  width: 40%;
+
+  height: 40%;
+}
+
+.container-icono {
+  place-self: center;
+  display: flex;
+  place-content: center;
+  background-color: var(--Very-light-pink);
+  border-radius: 50%;
+  height: 150px;
+  width: 50%;
+}
