@@ -15,38 +15,39 @@
   <body>
     <div class="login">
       <div class="form-container">
-        <h1 class="title-crear">My Acount</h1>
-
         <form action="/createAccount" class="form">
+          <h1 class="title-crear">My Acount</h1>
           <!-- el atributo for="" le indica al label cual es el input con el que va a relacionarse, por lo tanto se debe colocar el id="" con el mismo valor colocadp en el for="" del label -->
-          <label for="accountName" class="label">Account Name</label>
-          <input
-            type="accountName"
-            id="accountName"
-            class="input input-password"
-            placeholder="Debora Meltrozo"
-          />
+          <div>
+            <label for="accountName" class="label">Account Name</label>
+            <input
+              type="accountName"
+              id="accountName"
+              class="input input-password"
+              placeholder="Debora Meltrozo"
+            />
 
-          <label for="password" class="label">Password</label>
-          <input
-            type="password"
-            id="password"
-            class="input input-password"
-            placeholder="*******"
-          />
-          <label for="re-enterPassword" class="label">Confirm password</label>
-          <input
-            type="password"
-            id="re-enterPassword"
-            class="input input-re-enterPassword"
-            placeholder="*******"
-          />
-          <input
-            type="submit"
-            value="Create"
-            class="primary-button login-button"
-          />
+            <label for="password" class="label">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="input input-password"
+              placeholder="*******"
+            />
+            <label for="re-enterPassword" class="label">Confirm password</label>
+            <input
+              type="password"
+              id="re-enterPassword"
+              class="input input-re-enterPassword"
+              placeholder="*******"
+            />
+          </div>
         </form>
+        <input
+          type="submit"
+          value="Create"
+          class="primary-button login-button"
+        />
       </div>
     </div>
   </body>
