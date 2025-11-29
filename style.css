@@ -40,6 +40,10 @@ body {
   font-size: var(--lg);
   margin-bottom: 12px;
 }
+.title-crear {
+  font-size: var(--lg);
+  margin-bottom: 12px;
+}
 
 .subtitle {
   text-align: center;

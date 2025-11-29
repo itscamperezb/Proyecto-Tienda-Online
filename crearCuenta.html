@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Create Acount</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login">
+      <div class="form-container">
+        <h1 class="title-crear">My Acount</h1>
+
+        <form action="/createAccount" class="form">
+          <!-- el atributo for="" le indica al label cual es el input con el que va a relacionarse, por lo tanto se debe colocar el id="" con el mismo valor colocadp en el for="" del label -->
+          <label for="accountName" class="label">Account Name</label>
+          <input
+            type="accountName"
+            id="accountName"
+            class="input input-password"
+            placeholder="Debora Meltrozo"
+          />
+
+          <label for="password" class="label">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="input input-password"
+            placeholder="*******"
+          />
+          <label for="re-enterPassword" class="label">Confirm password</label>
+          <input
+            type="password"
+            id="re-enterPassword"
+            class="input input-re-enterPassword"
+            placeholder="*******"
+          />
+          <input
+            type="submit"
+            value="Create"
+            class="primary-button login-button"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
