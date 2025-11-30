@@ -14,29 +14,29 @@
   </head>
   <body>
     <div class="login">
-      <div class="form-containerCreateAccount">
+      <div class="form-container">
         <form action="/createAccount" class="form">
           <h1 class="title-crear">My Acount</h1>
           <!-- el atributo for="" le indica al label cual es el input con el que va a relacionarse, por lo tanto se debe colocar el id="" con el mismo valor colocadp en el for="" del label -->
           <div>
-            <label for="accountName" class="label">Account Name</label>
+            <label for="Name" class="label">Name</label>
             <input
-              type="accountName"
+              type="Name"
               id="accountName"
               class="input input-password"
               placeholder="Debora Meltrozo"
             />
 
-            <label for="password" class="label">Password</label>
+            <label for="email" class="label">Email</label>
             <input
-              type="password"
-              id="password"
+              type="email"
+              id="text"
               class="input input-password"
-              placeholder="*******"
+              placeholder="deborameltrozo@gmail.com"
             />
-            <label for="re-enterPassword" class="label">Confirm password</label>
+            <label for="Password" class="label">Password</label>
             <input
-              type="password"
+              type="Password"
               id="re-enterPassword"
               class="input input-re-enterPassword"
               placeholder="*******"
@@ -45,8 +45,8 @@
         </form>
         <input
           type="submit"
-          value="Create"
-          class="primary-button login-button"
+          value="Edit"
+          class="secondary-button edit-button"
         />
       </div>
     </div>
