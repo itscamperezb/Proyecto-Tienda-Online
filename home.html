@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       :root {
         --Very-light-pink: #c7c7c7;
@@ -25,6 +31,53 @@
         width: 200px;
         height: 200px;
         object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 240px);
+        grid-template-rows: auto;
+        width: 90%;
+        border: 6px solid red;
+        justify-items: center;
+        justify-content: center;
+      }
+      .main-container {
+        display: flex;
+        justify-content: center;
+        border: 5px solid black;
+      }
+      .product-info {
+        display: flex;
+        border: 2px solid blue;
+        justify-content: space-between;
+      }
+
+      .product-info figure {
+        margin: 0;
+        place-self: center;
+      }
+      .price {
+        font-weight: bold;
+      }
+      @media (max-width: 640px) {
+        .cards-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, 150px);
+          grid-template-rows: auto;
+          width: 90%;
+          border: 6px solid red;
+          justify-items: center;
+          justify-content: center;
+          gap: 15px;
+        }
+        .product {
+          width: 150px;
+          height: 150px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
       }
     </style>
     <title>Home</title>
@@ -37,195 +90,225 @@
             src="https://i.pinimg.com/1200x/75/25/ed/7525ed5a98e8b80bcbf6130a18ef975b.jpg"
             class="product"
           />
-          <div class="info">
-            <p class="price">1000</p>
-            <p class="name">Ktm Duke 200</p>
+          <div class="product-info">
+            <div class="info">
+              <p class="price">1000</p>
+              <p class="name">Ktm Duke 200</p>
+            </div>
+            <figure class="cart">
+              <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
+            </figure>
           </div>
-          <figure class="card-favorite">
-            <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
-          </figure>
-        </div>
-        <div class="product-card">
-          <img
-            src="https://i.pinimg.com/736x/50/50/2c/50502c8f399548e22d16ed13dc2d81d4.jpg"
-            class="product"
-          />
-          <div class="info">
-            <p class="price">1000</p>
-            <p class="name">Susuki Gixxer 250cc</p>
-          </div>
-          <figure class="card-favorite">
-            <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
-          </figure>
-        </div>
-        <div class="product-card">
-          <img
-            src="https://i.pinimg.com/1200x/a2/dd/26/a2dd2602c1793ba80adca8e447320dd0.jpg"
-            class="product"
-          />
-          <div class="info">
-            <p class="price">1000</p>
-            <p class="name">Yamaha R3</p>
-          </div>
-          <figure class="card-favorite">
-            <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
-          </figure>
-        </div>
-        <div class="product-card">
-          <img
-            src="https://i.pinimg.com/736x/c4/9b/ec/c49bec97a4e1da5324b1022b21f16bde.jpg"
-            class="product"
-          />
-          <div class="info">
-            <p class="price">1000</p>
-            <p class="name">Ktm Duke 200</p>
-          </div>
-          <figure class="card-favorite">
-            <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
-          </figure>
-        </div>
-        <div class="product-card">
-          <img
-            src="https://i.pinimg.com/736x/eb/be/8e/ebbe8ec895bd4943e2434571a9dd3def.jpg"
-            class="product"
-          />
-          <div class="info">
-            <p class="price">1000</p>
-            <p class="name">Susuki Gixxer 250cc</p>
-          </div>
-          <figure class="card-favorite">
-            <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
-          </figure>
-        </div>
-        <div class="product-card">
-          <img
-            src="https://i.pinimg.com/736x/21/24/2f/21242f4c5d3a3671201d3070a4e118ac.jpg"
-            class="product"
-          />
-          <div class="info">
-            <p class="price">1000</p>
-            <p class="name">Yamaha R3</p>
-          </div>
-          <figure class="card-favorite">
-            <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
-          </figure>
-        </div>
-        <div class="product-card">
-          <img
-            src="https://i.pinimg.com/1200x/98/e4/87/98e487480f244519f9da662e15a04b8d.jpg"
-            class="product"
-          />
-          <div class="info">
-            <p class="price">1000</p>
-            <p class="name">Ktm Duke 200</p>
-          </div>
-          <figure class="card-favorite">
-            <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
-          </figure>
-        </div>
-        <div class="product-card">
-          <img
-            src="https://i.pinimg.com/1200x/b2/22/da/b222da651b01d5a9a2c2fc1f2fdc0220.jpg"
-            class="product"
-          />
-          <div class="info">
-            <p class="price">1000</p>
-            <p class="name">Susuki Gixxer 250cc</p>
-          </div>
-          <figure class="card-favorite">
-            <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
-          </figure>
-        </div>
-        <div class="product-card">
-          <img
-            src="https://i.pinimg.com/1200x/a2/dd/26/a2dd2602c1793ba80adca8e447320dd0.jpg"
-            class="product"
-          />
-          <div class="info">
-            <p class="price">1000</p>
-            <p class="name">Yamaha R3</p>
-          </div>
-          <figure class="card-favorite">
-            <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
-          </figure>
         </div>
         <div class="product-card">
           <img
             src="https://i.pinimg.com/1200x/75/25/ed/7525ed5a98e8b80bcbf6130a18ef975b.jpg"
             class="product"
           />
-          <div class="info">
-            <p class="price">1000</p>
-            <p class="name">Ktm Duke 200</p>
+          <div class="product-info">
+            <div class="info">
+              <p class="price">1000</p>
+              <p class="name">Ktm Duke 200</p>
+            </div>
+            <figure class="cart">
+              <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
+            </figure>
           </div>
-          <figure class="card-favorite">
-            <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
-          </figure>
-        </div>
-        <div class="product-card">
-          <img
-            src="https://i.pinimg.com/736x/50/50/2c/50502c8f399548e22d16ed13dc2d81d4.jpg"
-            class="product"
-          />
-          <div class="info">
-            <p class="price">1000</p>
-            <p class="name">Susuki Gixxer 250cc</p>
-          </div>
-          <figure class="card-favorite">
-            <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
-          </figure>
-        </div>
-        <div class="product-card">
-          <img
-            src="https://i.pinimg.com/1200x/a2/dd/26/a2dd2602c1793ba80adca8e447320dd0.jpg"
-            class="product"
-          />
-          <div class="info">
-            <p class="price">1000</p>
-            <p class="name">Yamaha R3</p>
-          </div>
-          <figure class="card-favorite">
-            <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
-          </figure>
         </div>
         <div class="product-card">
           <img
             src="https://i.pinimg.com/1200x/75/25/ed/7525ed5a98e8b80bcbf6130a18ef975b.jpg"
             class="product"
           />
-          <div class="info">
-            <p class="price">1000</p>
-            <p class="name">Ktm Duke 200</p>
+          <div class="product-info">
+            <div class="info">
+              <p class="price">1000</p>
+              <p class="name">Ktm Duke 200</p>
+            </div>
+            <figure class="cart">
+              <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
+            </figure>
           </div>
-          <figure class="card-favorite">
-            <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
-          </figure>
         </div>
         <div class="product-card">
           <img
-            src="https://i.pinimg.com/736x/50/50/2c/50502c8f399548e22d16ed13dc2d81d4.jpg"
+            src="https://i.pinimg.com/1200x/75/25/ed/7525ed5a98e8b80bcbf6130a18ef975b.jpg"
             class="product"
           />
-          <div class="info">
-            <p class="price">1000</p>
-            <p class="name">Susuki Gixxer 250cc</p>
+          <div class="product-info">
+            <div class="info">
+              <p class="price">1000</p>
+              <p class="name">Ktm Duke 200</p>
+            </div>
+            <figure class="cart">
+              <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
+            </figure>
           </div>
-          <figure class="card-favorite">
-            <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
-          </figure>
         </div>
         <div class="product-card">
           <img
-            src="https://i.pinimg.com/1200x/a2/dd/26/a2dd2602c1793ba80adca8e447320dd0.jpg"
+            src="https://i.pinimg.com/1200x/75/25/ed/7525ed5a98e8b80bcbf6130a18ef975b.jpg"
             class="product"
           />
-          <div class="info">
-            <p class="price">1000</p>
-            <p class="name">Yamaha R3</p>
+          <div class="product-info">
+            <div class="info">
+              <p class="price">1000</p>
+              <p class="name">Ktm Duke 200</p>
+            </div>
+            <figure class="cart">
+              <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
+            </figure>
           </div>
-          <figure class="card-favorite">
-            <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
-          </figure>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i.pinimg.com/1200x/75/25/ed/7525ed5a98e8b80bcbf6130a18ef975b.jpg"
+            class="product"
+          />
+          <div class="product-info">
+            <div class="info">
+              <p class="price">1000</p>
+              <p class="name">Ktm Duke 200</p>
+            </div>
+            <figure class="cart">
+              <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i.pinimg.com/1200x/75/25/ed/7525ed5a98e8b80bcbf6130a18ef975b.jpg"
+            class="product"
+          />
+          <div class="product-info">
+            <div class="info">
+              <p class="price">1000</p>
+              <p class="name">Ktm Duke 200</p>
+            </div>
+            <figure class="cart">
+              <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i.pinimg.com/1200x/75/25/ed/7525ed5a98e8b80bcbf6130a18ef975b.jpg"
+            class="product"
+          />
+          <div class="product-info">
+            <div class="info">
+              <p class="price">1000</p>
+              <p class="name">Ktm Duke 200</p>
+            </div>
+            <figure class="cart">
+              <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i.pinimg.com/1200x/75/25/ed/7525ed5a98e8b80bcbf6130a18ef975b.jpg"
+            class="product"
+          />
+          <div class="product-info">
+            <div class="info">
+              <p class="price">1000</p>
+              <p class="name">Ktm Duke 200</p>
+            </div>
+            <figure class="cart">
+              <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i.pinimg.com/1200x/75/25/ed/7525ed5a98e8b80bcbf6130a18ef975b.jpg"
+            class="product"
+          />
+          <div class="product-info">
+            <div class="info">
+              <p class="price">1000</p>
+              <p class="name">Ktm Duke 200</p>
+            </div>
+            <figure class="cart">
+              <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i.pinimg.com/1200x/75/25/ed/7525ed5a98e8b80bcbf6130a18ef975b.jpg"
+            class="product"
+          />
+          <div class="product-info">
+            <div class="info">
+              <p class="price">1000</p>
+              <p class="name">Ktm Duke 200</p>
+            </div>
+            <figure class="cart">
+              <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i.pinimg.com/1200x/75/25/ed/7525ed5a98e8b80bcbf6130a18ef975b.jpg"
+            class="product"
+          />
+          <div class="product-info">
+            <div class="info">
+              <p class="price">1000</p>
+              <p class="name">Ktm Duke 200</p>
+            </div>
+            <figure class="cart">
+              <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i.pinimg.com/1200x/75/25/ed/7525ed5a98e8b80bcbf6130a18ef975b.jpg"
+            class="product"
+          />
+          <div class="product-info">
+            <div class="info">
+              <p class="price">1000</p>
+              <p class="name">Ktm Duke 200</p>
+            </div>
+            <figure class="cart">
+              <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i.pinimg.com/1200x/75/25/ed/7525ed5a98e8b80bcbf6130a18ef975b.jpg"
+            class="product"
+          />
+          <div class="product-info">
+            <div class="info">
+              <p class="price">1000</p>
+              <p class="name">Ktm Duke 200</p>
+            </div>
+            <figure class="cart">
+              <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i.pinimg.com/1200x/75/25/ed/7525ed5a98e8b80bcbf6130a18ef975b.jpg"
+            class="product"
+          />
+          <div class="product-info">
+            <div class="info">
+              <p class="price">1000</p>
+              <p class="name">Ktm Duke 200</p>
+            </div>
+            <figure class="cart">
+              <img src="./icons/bt_add_to_cart.svg" alt="cart icon" />
+            </figure>
+          </div>
         </div>
       </div>
     </section>
